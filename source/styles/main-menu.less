@@ -1,0 +1,46 @@
+.main-menu {
+	width: 100%;
+	max-width: 1160px;
+	margin: 45px auto 50px auto;
+	&__header {
+	font-size: 47px;
+    line-height: 48px;
+    text-transform: none;
+    margin-left:40px;
+	}
+	&__list {
+	list-style:none;
+	display:flex;
+	width: 500px;
+	}
+	&__item {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: normal;
+    text-transform: none;
+    opacity: 0.3;
+	&:hover {
+ 	opacity: 0.5;
+	}
+	&:active {
+ 	opacity: 0.1;
+	}
+	&:focus {
+ 	opacity: 0.1;
+	}
+	&--right i {
+  	background: #fff;
+  	cursor: pointer;
+ 	display:inline-block;
+ 	margin: 0 15px;
+	}
+	&--right i::before {
+	content: "\f105";
+	font-family: FontAwesome;
+  	font-size: 18px;
+  	color: #000;
+	}
+	}
+}

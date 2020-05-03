@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url('../fonts/gilroy-extrabold.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/gilroy-extrabold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+        url('../fonts/gilroy-extrabold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/gilroy-extrabold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/gilroy-extrabold.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/gilroy-extrabold.svg#gilroy-extrabold') format('svg');
+         /* Chrome < 4, Legacy iOS */
+    font-style: normal;
+    font-weight: 800;
+}
+body {
+margin: 0;
+padding:0;
+font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
+font-size: 18px;
+line-height: 24px;
+font-weight: 800;
+letter-spacing: 2px;
+color: #000;
+background-color: #fff;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.container {
+    width: 100%;
+    max-width: 1160px;
+	margin: 0 auto;
+	
+}
+.visually-hidden:not(:focus):not(:active),
+input [type="checkbox"].visually-hidden,
+input [type="radio"].visually-hidden {
+position:absolute;
+width:1px;
+height:1px;
+margin:-1px;
+border:0;
+padding:0;	
+white-space:nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+img {
+	max-width:100%;
+	height:auto;
+}
+.main-button {
+    font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #000;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: none;
+    letter-spacing: 3px;
+    display: inline-block;
+    background-image: url("../images/Layer 6 copy 5.png");
+    background-position:  center;
+    background-repeat: repeat no-repeat;
+    cursor: pointer;
+    outline: none;
+    padding: 0px 45px 0px 45px;
+    &:hover {
+    background-image: none;
+    background-color: #f0c52e;
+    border-right: 20px  solid #f0c52e;
+    border-left: 20px  solid #f0c52e;
+    outline: none;
+    padding: 8px 25px 8px 25px;
+    }
+    &:active {
+    background-image: none;
+    background-color: #f0c52e;
+    opacity: 0.3;
+    border-right: 20px  solid #f0c52e;
+    border-left: 20px  solid #f0c52e;
+    outline: none;
+    padding: 8px 25px 8px 25px;  
+    }
+    /*&:focus {
+    background-image: none;
+    background-color: #f0c52e;
+    opacity: 0.3;
+    border-right: 20px  solid #f0c52e;
+    border-left: 20px  solid #f0c52e;
+    outline: none;
+    padding: 8px 25px 8px 25px;  
+    }*/
+}
+.container__div-flex {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto 80px auto;
+ } 
+.container__flex-div {
+    display: flex;
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+}

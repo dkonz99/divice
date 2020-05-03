@@ -1,0 +1,56 @@
+.modal-map {
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	width: 100%;
+	max-width:960px;
+	min-height:559px;
+	background: url(../images/map-big.jpg) no-repeat 0 0;
+	position:fixed;
+	top:50%;
+	margin-top:-250px;
+	left:50%;
+	margin-left:-480px;
+	display:none;
+	&__close {
+	background-color: #f0c52e;
+	border: 1px solid #f0c52e;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	min-width:60px;	
+	min-height:60px;
+	border-radius: 50%;
+	text-transform: none;
+	opacity: 0.5;
+	margin:20px 0 15px 880px;
+	position:absolute;
+	&::before {
+	content:"";
+	position:absolute;
+	width: 35px;
+	height: 3px;
+	background-color:#fff;
+	top:28px;
+	left:13px;
+	transform:rotate(45deg);
+	}
+	&::after {
+	content:"";
+	position:absolute;
+	width: 35px;
+	height: 3px;
+	background-color:#fff;
+	top:28px;
+	left:13px;
+	transform:rotate(-45deg);
+	}
+	&:hover {
+	opacity: 1;
+	}
+	&:active {
+	opacity: 0.3;
+	}
+	&:focus {
+	opacity: 0.3;
+	}
+	}
+}
