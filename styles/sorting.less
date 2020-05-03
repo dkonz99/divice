@@ -1,0 +1,98 @@
+.container__flex-div--products {
+  width: 70%;
+  position: relative;
+}
+.sorting {
+	background-color: #ebebeb;
+	display:flex;
+  &__header {
+  width: 15%;
+  font-size: 16px;
+  line-height: 24px;
+  display:inline-block;
+  margin: 20px 6% 20px 10%;
+  }
+  &__nav {
+  width: 30%;
+  &--button {
+    width: 5%;
+    margin-left: 25%;
+  }
+  }
+  &__list {
+  margin-left: 0px; 
+  padding-left: 0px;
+      
+  list-style: none;
+  display:flex;
+  justify-content: space-between;
+  }
+  &__button {
+    margin: 0px;
+    padding: 0px;
+    font: inherit;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    text-transform: none;
+    border: none;
+    background-color: #ebebeb;
+    outline:none;
+    cursor:pointer;
+    opacity:0.3; 
+    &:hover {
+    opacity:0.5;  
+    } 
+    &:active {
+    opacity:1;  
+    } 
+    &:focus {
+    opacity:1;  
+    } 
+  }
+}
+
+.fa-caret-up {
+  margin: 0px;
+  padding: 0px;
+ 	font: inherit;
+	content: "\f0d8";
+	font-family: FontAwesome;
+  font-size: 25px;
+  color: #000;
+  border: none;
+    background-color: #ebebeb;
+    outline:none;
+    cursor:pointer;
+    opacity:0.3;
+}
+.fa-caret-up:hover {
+opacity:0.5;		
+}
+.fa-caret-up:active,
+ .fa-caret-up:focus{
+opacity:1;		
+}
+
+.fa-caret-down {
+	font: inherit;
+	content: "\f0d7";
+	font-family: FontAwesome;
+  font-size: 25px;
+  color: #000;
+  border: none;
+    background-color: #ebebeb;
+    outline:none;
+    cursor:pointer;
+    opacity:0.3;
+    padding: 0px;
+}
+.fa-caret-down:hover {
+opacity:0.5;		
+}
+.fa-caret-down:active,
+ .fa-caret-down:focus{
+opacity:1;		
+}

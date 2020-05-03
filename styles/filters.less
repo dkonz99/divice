@@ -1,0 +1,179 @@
+.container__flex-div--filter {
+	/* margin-left: -10px;
+	margin-right:-10px; */
+}
+.filters {
+	width: 30%;
+	background-color: #efefef;
+	&__header {
+	margin: 0px;
+	padding: 0px;
+	font-size: 16px;
+    line-height: 24px;
+    background-color: #dcdcdc;
+    display:inline-block;
+    width: 89%;
+    padding: 20px 0 20px 11%;
+    text-transform: uppercase;
+	}
+	&__form {
+	margin-top: 70px;
+	margin-left:30px;
+	padding-right: 1px;
+	width: 200px;
+	}
+
+	&__range {
+	
+	}
+	&__range-controls {
+	position: relative;
+    margin-top: 17px;
+    margin-bottom: 8px;
+	}
+	&__range-scale {
+	height: 2px;
+    background-color: #dbdbdb;
+	}
+	&__range-bar {
+	position: absolute;
+    left: 0;
+    width: 60%;
+    height: 2px;
+    background: #91c92f;
+	}
+	&__range-toggle {
+	content: "";
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0,1,1,.2); 
+    box-shadow: 0 2px 1px 0 rgba(0,1,1,.2);
+    cursor: pointer;
+		&--min {
+		left: -6px;
+		}
+		&--max {
+		left: 107px;	
+		}
+	}
+	&__range-label {
+	border: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0,0,0,.2);
+    background-color: transparent;
+	}
+	&__range-input {
+	border: none;
+    font-size: 14px;
+    font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+    color: rgba(0,0,0,.2);
+    background-color: transparent;
+    width: 50px;
+	}
+	&__range-input[name=min-price] {
+	margin-right: 17px;
+	}
+	&__option-list {
+	display:flex;
+	justify-content: space-between;
+	flex-direction:column;
+	margin:0;
+	margin-left:-35px;
+	}
+	&__form legend {
+	text-transform:none;
+	background-image: url("../images/Layer 131.png");
+	background-position: top  ;
+    background-repeat: no-repeat;
+    width: 200px;
+    padding-top:20px;
+    display:inline-block;
+	letter-spacing: normal;
+	}
+	&__form fieldset {
+	border: none; 
+	}
+	&__option-list {
+	list-style:none;
+	}	
+	/*Дальше будет стилизация чекбокса*/
+	&__option input[type="checkbox"] {
+	display: none;
+	}
+	&__option input[type="checkbox"] + label {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+    line-height: 40px;
+    text-transform: none;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+	}
+	&__option input[type="checkbox"] + label::before {
+	content: "\f096";
+	font-family: FontAwesome;
+  	font-size: 25px;
+  	color: #000;
+  	display: inline-block;
+   	vertical-align: top;
+   	margin-right: 18px;
+	} 
+	&__option input[type="checkbox"]:checked + label::before {
+	content: "\f046";
+	font-family: FontAwesome;
+  	font-size: 25px;
+  	color: #000;
+  	margin-right: 15px;
+	}
+	&__option input[type="checkbox"] + label:hover {
+	opacity: 0.5;
+	}
+	&__option input[type="checkbox"]:disabled + label {
+	opacity: 0.1;
+	}
+	&__option input[type=radio] {
+	display: none;
+	}
+	&__option label {
+	display: inline-block;
+	cursor: pointer;	
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+    line-height: 40px;
+    text-transform: none;
+    letter-spacing: normal;
+	}
+	&__option label:before {
+	content: "\f10c";
+	font-family: FontAwesome;
+  	font-size: 25px;
+  	color: #000;
+	display: inline-block;
+	margin-right: 15px;
+	}
+ 	&__option input[type=radio]:checked + label:before {
+	content: "\f192";
+	font-family: FontAwesome;
+  	font-size: 25px;
+  	color: #000;
+	display: inline-block;
+	}
+	&__option input[type=radio] + label:hover {
+	opacity: 0.5;
+	}
+	&__option input[type="radio"]:disabled + label {
+	opacity: 0.1;
+	}
+	&__button {
+	background-color: #efefef;
+	margin-left:10px;
+	}
+}
