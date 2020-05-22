@@ -21,15 +21,33 @@ letter-spacing: 2px;
 color: #000;
 background-color: #fff;
 }
+
 a {
 	text-decoration: none;
 	color: #000;
+    outline: none;
+}
+ul {
+    list-style: none;
 }
 .container {
     width: 100%;
     max-width: 1160px;
 	margin: 0 auto;
-	
+    
+    &__div-flex {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto 80px auto;
+    } 
+    &__flex-div {
+    display: flex;
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    }
 }
 .visually-hidden:not(:focus):not(:active),
 input [type="checkbox"].visually-hidden,
@@ -95,17 +113,4 @@ img {
     outline: none;
     padding: 8px 25px 8px 25px;  
     }*/
-}
-.container__div-flex {
-    display: flex;
-    justify-content:space-between;
-    width: 100%;
-    max-width: 1160px;
-    margin: 0 auto 80px auto;
- } 
-.container__flex-div {
-    display: flex;
-    width: 100%;
-    max-width: 1160px;
-    margin: 0 auto;
 }
